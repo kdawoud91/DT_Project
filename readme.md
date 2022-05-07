@@ -1,4 +1,4 @@
-# Learn how to integrate zoom api with household devices to controll them automatically. 
+# Learn how to integrate zoom api with household devices to controll AC/DC devices automatically. 
 
 I didn't find much example code to get started with zoom api in python, so now i'm sharing my code so you guys can learn easily
 
