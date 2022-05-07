@@ -1,0 +1,19 @@
+import serial 
+import pyfirmata
+from pyfirmata import Arduino,util
+import time
+
+
+
+arddata=serial.Serial('/dev/cu.usbmodem101',9600)
+
+while True:
+    if (arddata.inWaiting()>0):
+        mydata=arddata.readline()
+        mydata=str(mydata.decode("utf-8"))
+        print(mydata)
+        #if mydata == "My name is khaled":
+    time.sleep(1)
+    arddata.write(b'H')
+    time.sleep(1)   # wait 0.5 seconds
+    arddata.write(b'L')
